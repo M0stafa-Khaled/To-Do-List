@@ -137,7 +137,7 @@ input[type="submit"]:active {
 }
 
 .result p {
-    width: 60%;
+    width: 70%;
     overflow-wrap: break-word;
     font-size: 18px;
     padding: 12px 15px;
@@ -194,8 +194,8 @@ input[type="submit"]:active {
 
     .tasks {
         width: calc(100% - 30px);
-        flex-direction: column;
     }
+
 
     input[type="text"] {
         width: 100%;
@@ -206,4 +206,24 @@ input[type="submit"]:active {
         padding: 15px;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .result {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .result p {
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    .result .del {
+        width: 100%;
+        padding: 15px;
+    }
 }
